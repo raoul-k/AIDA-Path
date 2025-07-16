@@ -47,3 +47,19 @@ MPCS <- function(m1, m2, agg="mean"){
   sym_sim <- max(preMPCS(m1, m2, agg), preMPCS(m2, m1, agg))
   return(sym_sim)
 }
+
+# cosine similarity as a distance object (=> cosine distance/angular distance)
+distCosSim <- function(m, ang=T, distObj=T){
+  if(is.vector(m)) m <- t(m)
+  
+  # check if any row is only 0s, should not be possible
+  # if( any(rowSums(m1)==0) | any(rowSums(m2)==0) ) return()
+  
+  sims <- sapply(1:nrow(m), function(i) matrixCosSim(m[i,], m, max=F))
+  
+  if(ang) sims <- 2*acos(sims)/pi #angular distance
+  else    sims <- 1-sims #cosine distance
+  
+  if(distObj) return( as.dist(sims) )
+  else return( sims )
+}
