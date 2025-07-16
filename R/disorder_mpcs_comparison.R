@@ -1,5 +1,4 @@
 
-setwd("~/IDA Lab/Dissertation/Paper4-Cooperations/Codes_R/github")
 source("mpcs.R")
 
 # data
