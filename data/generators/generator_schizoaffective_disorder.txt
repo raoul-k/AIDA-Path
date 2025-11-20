@@ -1,0 +1,10 @@
+gen_schizoaffective_disorder = [
+    [[{'delusions'}, {'hallucinations'}, {'disorganized_speech'}],
+     [{'depressive_episode'}, {'manic_episode'}], (1,0,2)], #A
+    [{'delusions_for_at_least_2_weeks_without_mood_episode'},
+     {'hallucinations_for_at_least_2_weeks_without_mood_episode'}, 1], #B
+    [{'mood_symptoms_present_majority_of_total_duration'}], #C
+    [{'not_attributable_to_the_physiological_effects_of_a_substance', 
+      'not_attributable_to_the_physiological_effects_of_another_medical_condition'}] #D
+] 
+#75 profiles

@@ -1,0 +1,21 @@
+gen_persistent_depressive_disorder = [
+    [{'depressed_mood'}], #A
+    [{'poor_appetite', 'overeating'}, 
+     {'insomnia', 'hypersomnia'},
+     {'fatigue', 'low_energy'},
+     {'low_self_esteem'},
+     {'poor_concentration', 'indecisiveness'},
+     {'hopelessness'}, 2], #B
+    [{'duration_at_least_2_years'}], #C
+    #D is useless as it says "may be present"
+    [{'no_past_manic_episodes', 'no_past_hypomanic_episode', 'no_past_cyclothymic_disorder'}], #E
+    [{'not_better_explained_by_schizoaffective_disorder',
+      'not_better_explained_by_schizophrenia',
+      'not_better_explained_by_delusional_disorder'}], #F
+    [{'not_attributable_to_the_physiological_effects_of_a_substance', 
+      'not_attributable_to_the_physiological_effects_of_another_medical_condition'}], #G
+    [{'significant_distress_social_area', 'significant_distress_occupational_area', 
+      'significant_distress_other_important_area', 'significant_impairment_social_area', 
+      'significant_impairment_occupational_area', 'significant_impairment_other_important_area'}, 1], #H
+] 
+#63_567 profiles

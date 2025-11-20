@@ -1,0 +1,10 @@
+gen_schizophreniform_disorder = [
+    [[{'delusions'}, {'hallucinations'}, {'disorganized_speech'}],
+     [{'grossly_disorganized_behavior', 'catatonic_behavior'}, {'negative_symptoms'}], (1,0,2)], #A
+    [{'duration_at_least_1_month', 'duration_less_than_6_months'}], #B
+    [{'not_better_explained_by_schizoaffective_disorder',
+      'not_better_explained_by_bipolar_disorder_with_psychotic_features'}], #C
+    [{'not_attributable_to_the_physiological_effects_of_a_substance', 
+      'not_attributable_to_the_physiological_effects_of_another_medical_condition'}] #D
+] 
+#53 profiles

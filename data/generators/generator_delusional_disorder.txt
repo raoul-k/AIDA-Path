@@ -1,0 +1,9 @@
+gen_delusional_disorder = [
+    [{'delustions', 'duration_at_least_1_month'}], #A
+     #B,C,D are conditional or something like "this is not present"
+    [{'not_attributable_to_the_physiological_effects_of_a_substance', 
+      'not_attributable_to_the_physiological_effects_of_another_medical_condition',
+      'not_better_explained_by_body_dysmorphic_disorder',
+      'not_better_explained_by_obsessive_compulsive_disorder'}], #E
+] 
+#1 profile

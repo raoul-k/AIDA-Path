@@ -1,0 +1,25 @@
+gen_mdd = [
+   [[{'depressed_mood'}, {'loss_of_interest', 'loss_of_pleasure'}],
+    [{'increased_appetite', 'reduced_appetite', 'weight_gain', 'weight_loss'}, 
+     {'hypersomnia', 'insomnia'},
+     {'psychomotor_agitation', 'psychomotor_retardation'},
+     {'loss_of_energy', 'fatigue'},
+     {'feeling_worthless', 'feeling_excessive_guilt', 'feeling_inappropriate_guilt'},
+     {'diminished_ability_to_concentrate', 'diminished_ability_to_think', 'indecisiveness'},
+     {'recurrent_death_thoughts', 'recurrent_suicidal_ideation', 
+      'plan_for_committing_suicide', 'suicide_attempt'}], (1,0,5)],
+   [{'significant_distress_social_area', 'significant_distress_occupational_area', 
+     'significant_distress_other_important_area', 'significant_impairment_social_area',
+     'significant_impairment_occupational_area', 'significant_impairment_other_important_area'}, 1],
+   [{'not_attributable_to_the_physiological_effects_of_a_substance',
+     'not_attributable_to_the_physiological_effects_of_another_medical_condition'}],
+   [{'not_better_explained_by_schizoaffective_disorder',
+     'not_better_explained_by_schizophrenia',
+     'not_better_explained_by_schizophreniform_disorder',
+     'not_better_explained_by_delusional_disorder',
+     'not_better_explained_by_other_specified_schizophrenia_spectrum',
+     'not_better_explained_by_other_unspecified_schizophrenia_spectrum',
+     'not_better_explained_by_other_psychotic_disorder'}],
+   [{'no_manic_episode', 'no_hypomanic_episode'}, 1]
+] 
+#1_376_583_579 profiles

@@ -1,0 +1,27 @@
+gen_panic_disorder = [
+    [{'intense_fear','intense_discomfort'}, 1], 
+    [{'palpitations','pounding_heart','accelerated_heart_rate'},
+     {'sweating'},
+     {'trembling','shaking'},
+     {'shortness_of_breath','smothering'},
+     {'feelings_of_choking'},
+     {'chest_pain','discomfort'},
+     {'nausea','abdominal_distress'},
+     {'feeling_dizzy','feeling_unsteady','feeling_light_headed','feeling_faint'},
+     {'chills','heat_sensations'},
+     {'paresthesias'},
+     {'derealization','depersonalization'},
+     {'fear_of_losing_control','fear_of_going_crazy'},
+     {'fear_of_dying'}, 4], #A
+    [{'persistent_concern_about_additional_panic_attack','persistent_worry_about_additional_panic_attack',
+      'persistent_concern_about_panic_attack_consequences','persistent_worry_about_panic_attack_consequences'},
+     {'maladaptive_change_in_behaviour'}, 1], #B
+    [{'not_attributable_to_the_physiological_effects_of_a_substance', 
+      'not_attributable_to_the_physiological_effects_of_another_medical_condition'}], #C
+    [{'not_better_explained_by_social_anxiety_disorder',
+      'not_better_explained_by_specific_phobia',
+      'not_better_explained_by_obsessive_compulsive_disorder',
+      'not_better_explained_by_posttraumatic_stress_disorder',
+      'not_better_explained_by_separation_anxiety_disorder'}]  #D
+] 
+#3_119_485_608 profiles
