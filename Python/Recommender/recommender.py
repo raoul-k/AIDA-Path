@@ -7,14 +7,28 @@ import pandas as pd
 def recommend_next_symptoms(df_list, has_symptoms):
     df_all_disorders = pd.concat(df_list)
     df_all_disorders = df_all_disorders.fillna(0)
-
     df_filtered = df_all_disorders
-    string_query = ' and '.join([s+'==1' for s in has_symptoms])
+    
+    # Non-Absent Symptoms Variant: string_query = ' and '.join([s+'==1' for s in has_symptoms])
+    # Differentiate between present (s+'==1') and absent symptoms (s+'==0'), indicated by ! before name
+    # "symptom1", "!symptom2"
+    query_parts = []
+    clean_symptoms = []
+    
+    for s in has_symptoms:
+        if s.startswith('!'):
+            clean_name = s[1:]  # Removes the starting "!"
+            query_parts.append(f"{clean_name}==0")
+            clean_symptoms.append(clean_name)
+        else:
+            query_parts.append(f"{s}==1")
+            clean_symptoms.append(s)    
+    string_query = ' and '.join(query_parts)
+    
     df_filtered = df_filtered.query(string_query)
-    df_filtered = df_filtered.drop(has_symptoms, axis=1)
+    df_filtered = df_filtered.drop(clean_symptoms, axis=1)
     disorders_coulds = set(df_filtered['disorder'].tolist())
     
-
     #Output 1: Possible Disorders
     print("Possible disorders:",", ".join(disorders_coulds))
     print()
