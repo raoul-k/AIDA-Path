@@ -1,0 +1,4 @@
+disorder1,symptom1,symptom2,symptom3,symptom5,symptom6,symptom7,symptom8,symptom10,symptom9
+disorder2,symptom3,symptom4,symptom5,symptom6,symptom7,symptom8,symptom10
+disorder3,symptom1,symptom4,symptom5,symptom6,symptom7,symptom8,symptom9,symptom10
+disorder4,symptom1,symptom5,symptom8,symptom10
